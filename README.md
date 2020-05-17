@@ -1,4 +1,4 @@
-Tugas Pemograman WEB COVID-19 Kelompok 4 Pemrograman WEB - UNJANI
+Tugas WEB COVID-19 oleh Kelompok 4 Pemrograman WEB UNJANI
 
 Dengan mengambil referensi dari situs:
 - https://pikobar.jabarprov.go.id
@@ -25,5 +25,3 @@ KELOMPOK 4:
 - Banyu Nur Rian
 - M. Rafi Hanief
 - M. Rian Permana
-
-My Web : https://ad.sirajin.com
