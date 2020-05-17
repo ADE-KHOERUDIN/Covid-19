@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Halaman Situs Corona - Tugas Kelompok 4 Pemograman Web">
+  <meta name="author" content="">
+
+  <title>COVID-19 - Data Indonesia Berdasarkan Provinsi</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/gaya.css" rel="stylesheet">
+  <meta name="theme-color" content="#4054B2"/>
+  <meta name="msapplication-navbutton-color" content="#4054B2"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4054B2"/>
+</head>
+
+<body>
+
+ <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark  logo fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">UNJANI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+       <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beritahome.html">Berita</a>
+		  </li>
+		  <!-- Dropdown -->
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toogle" href="provinsi.html" id="navbardrop" data-toggle="dropdown">Data</a>
+            <div class="dropdown-menu" id="menu">
+				<a class="nav-link" href="dunia.html">Data Dunia</a>
+				
+                <a class="nav-link active" href="provinsi.html" >Data Provinsi</a>
+            </div>
+		  </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="covid-info"> 
+	<div class="container">
+		<img src="img/vilus.png" class="images-vilus"\>
+		Peduli COVID-19
+	</div>
+  </div>
+  
+   <!-- Call to Action Well -->
+	<div class="row-info">
+		<div class="info card my-n3 text-center">
+			<div class="card-body">
+				<p class="text-dark m-0"></p>
+				<b class="jarak" style="font-size:25px;">HOTLINE</b> <b class="jarak" style="font-size:25px;">119</b>  <a href="tel:119" class="jarak"> <span class="panggil"> &nbsp;<img src="img/phone.png" class="corona-panggilan"\></span> </a> 
+			</div>
+		</div>
+	</div>
+  
+  <div class="container">
+        <div class="data">
+		<div class="data">
+		<div class = "indonesia">
+		   <div class ="keterangan">
+				<span class="indonesia-title">DATA INDONESIA</span><br>
+				<p class="indonesia-detail" style="display:inline;">POSITIF <b class="cor-positif" id="terjangkit">0</b>, SEMBUH <b class="cor-sembuh" id="membaik">0</b>, MENINGGAL <b class="cor-meninggal" id="memburuk">0</b></p><br>
+	               		<div class="kasusterbaru">
+					<b>Update Hari ini:</b>
+						<ul style="list-style: none;margin-left: -40px;">
+							<li> <span class="kasusbaru">+ <b id="newinfeksi">0</b> Orang Terinfeksi</span></li>
+							<li> <span class="kasusbaru">+ <b id="newmeninggal">0</b> Orang Meninggal</span></li>
+						</ul>
+				</div>
+		   </div>
+		   <div class="emoji">
+				<img src="https://kawalcorona.com/uploads/indonesia-PZq.png" alt="Indonesia" /></div>
+		   </div>
+		 </div>
+		<div class="title-cov">
+		 Sumber data : Kementerian Kesehatan & JHU. Update terakhir : <span id="date"></span>
+		</div>
+	</div>
+</div>
+		
+		<div class="clear"> </div>
+ 
+	<div class="container">
+	<div class="card">
+									<div class="card-header ">
+										<h3 class="card-title">Data Kasus Coronavirus di Indonesia Berdasarkan Provinsi</h3>
+									</div>
+									<div class="card-body">
+										<div class="table-responsive service">
+											<table class="table table-bordered table-hover mb-0 text-nowrap css-serial" id="tabel">
+												<thead>
+													<tr>
+														<th class="atasbro">No.</th>
+														<th class="atasbro">Provinsi</th>
+														<th class="atasbro">Positif</th>
+														<th class="atasbro">Sembuh</th>
+														<th class="atasbro">Meninggal</th>
+														
+													</tr>
+												</thead>
+											</table>
+										</div>
+									</div>
+								</div>
+	</div>
+  <!-- /.container -->
+	<div class="clear"> </div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Unjani 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	var d = new Date();
+	var month = new Array();
+	  month[0] = "Januari";
+	  month[1] = "Februari";
+	  month[2] = "Maret";
+	  month[3] = "April";
+	  month[4] = "Mei";
+	  month[5] = "Juni";
+	  month[6] = "Juli";
+	  month[7] = "Agustus";
+	  month[8] = "September";
+	  month[9] = "Oktober";
+	  month[10] = "November";
+	  month[11] = "Desember";
+	  
+	$("#date").html(d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear());
+		var dataIndo = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://corona.lmao.ninja/v2/countries/indonesia",
+                "method": "GET",
+            }
+            $.ajax(dataIndo).done(function (response) {
+                $('#terjangkit').html(response.cases);
+                $('#membaik').html(response.recovered);
+                $('#memburuk').html(response.deaths);
+		$('#newmeninggal').html(response.todayDeaths);
+		$('#newinfeksi').html(response.todayCases);
+            });
+	});
+	</script>
+	 <script>
+        $(document).ready(function(){
+            var dataIDs = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://indonesia-covid-19.mathdro.id/api/provinsi",
+                "method": "GET"
+            }
+            $.ajax(dataIDs).done(function (response) {
+                for (i in response.data) {
+                    $('#tabel').append('<tbody><tr><td>'+(parseInt(i)+1)+'</td><td>'+response.data[i].provinsi+'</td><td>'+response.data[i].kasusPosi+'</td><td>'+response.data[i].kasusSemb+'</td><td>'+response.data[i].kasusMeni+'</td></tr></tbody>');
+                } 
+            });        
+        });
+    </script>
+</body>
+</html>

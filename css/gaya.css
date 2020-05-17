@@ -1,0 +1,259 @@
+body {
+	padding-top:60px !important;
+	background: #F7FAFD;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.navbar {
+	background-color: #4054B2; 
+	font-size: 18px;
+}
+.covid-info {
+	background-color: transparent;
+    background-image: linear-gradient(180deg, #4054B2 0%, #f2295b 100%);
+    height: 120px;
+    color: #fff;
+}
+
+.row-info {
+	border-radius: 40px;
+    background: #ffffff;
+    margin-top: -24px;
+    padding-top: 20px;
+}
+
+.info {
+	padding: 12px;
+    margin: 0px 5px;
+    margin-bottom: 20px !important;
+    border-radius: 35px;
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.images-vilus {
+	float: right;
+	width: 100px;
+}
+.pt-4, .py-4 {
+	padding-top: -2rem !important;
+}
+
+@media (min-width: 768px) {
+	.container {
+	  max-width: 960px;
+	}
+	.konten {
+		width: 49%;
+		display: inline-block;
+		padding: 10px 5px;
+		margin-left: 8px;
+	}
+	.isi {
+	    background: #fff;
+	    padding: 13px;
+	    box-shadow: 0 5px 10px rgba(167,66,153,0.3);
+	    border-radius: 10px;
+	    margin: 0px 3px;
+	}
+
+}
+
+@media (max-width: 768px) {
+	.container {
+	  max-width: 100%;
+	}
+	.konten {
+		width: 100%;
+   		 display: block;
+   		 padding: 10px;
+   		 padding-left: 15px;
+		}
+	.isi {
+	    background: #fff;
+	    padding: 13px;
+	    box-shadow: 0 5px 10px rgba(167,66,153,0.3);
+	    border-radius: 10px;
+	    margin: 0px 3px;
+	}
+}
+
+.card-custom {
+    background: linear-gradient(119deg, #4054B2 0%, #f2295b 100%);
+    color: #fff;
+    width: 99%;
+}
+
+.card-kostum {
+    background: linear-gradient(80deg, #4054B2 0%, #f2295b 100%);
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.navbar-brand {
+	font-size: 25px;
+}
+
+p.indonesia-detail {
+	margin:0!important
+}
+.title-cov{
+	text-align:center;
+	color:#222;
+	font-size:14px
+}
+.indonesia-title{
+	font-size:20px;
+	font-weight:600
+}
+.keterangan{
+	font-size:15px;
+	text-align:left;
+	color:#ffffff;
+	width:100%;
+}
+.data{
+	margin:5px 0 10px;display:inline;
+}
+.data .positif,.data .sembuh,.data .meninggal,
+.data .indonesia{
+	width:100%;height:110px;padding:0.5rem 1rem;border-radius:5px;position:relative;
+}
+.data .positif:before,
+.data .sembuh:before,
+.data .meninggal:before,
+.data .indonesia:before {
+	content:&#39;&#39;position:absolute;background:url(https://kawalcorona.com/data/images/svgs/circle.svg);background-position-x:0%;background-position-y:0%;background-repeat:repeat;background-position:right;background-repeat:no-repeat;width:100%;height:100%;opacity:0.5;top:0;left:0}.data .sembuh{margin:0px 0 0px auto}.data .indonesia{margin:0px 0 10px 0
+}
+.data .positif {
+	background:#f82649!important;
+	display:flex;
+	box-shadow:0 5px 10px rgba(167,66,153,0.3)
+}
+.data .sembuh {
+	background:#09ad95!important;
+	display:flex;
+	box-shadow:0 5px 10px rgba(167,66,153,0.3)
+}
+.data .meninggal {
+	background:#d43f8d!important;
+		display:flex;
+		box-shadow:0 5px 10px rgba(167,66,153,0.3)
+}
+.data .indonesia {
+	background:#fc7303!important;
+	display:flex;
+	box-shadow:0 5px 10px rgba(167,66,153,0.3);
+	height:180px;
+}
+.emoji img { 
+	width:50px
+}
+.emoji {
+	margin-left:auto!important;width:50px!important
+}
+.angka {
+	font-weight:600!important;font-size:20px
+}
+.indonesia-detail {
+	width:100px
+}
+
+.clear {
+	padding:20px ;
+}
+
+.corona-panggilan {
+	margin-bottom: 6px;
+    padding-right: 5px;
+}
+
+.panggil {
+	width: 80px;
+	border-radius: 100px;
+	background:#09ad95;
+	padding:10px;
+}
+
+.panggil:hover, .panggil:focus {
+	background:#2d5d56;
+}
+
+.jarak {
+	padding: 0px 15px;
+	color:red;
+}
+.col-sm {
+	padding-bottom:10px;
+}
+.title-cov {
+	background: #ddd;
+	padding:10px;
+	border-radius: 5px;
+}
+.no-underline {
+	text-decoration: none !important;
+}
+.kasusbaru {
+    background: antiquewhite;
+    border-radius: 10px;
+    padding: 1px 12px;
+    color: #4e4c41;
+}
+.kasusterbaru {
+    padding: 10px;
+    font-size: 17px;
+}
+.container-fluid {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(167,66,153,0.3);
+}
+.daftarrs {
+	padding: 12px;
+    background: aliceblue;
+    font-size: 11px;
+}
+.bodyrs {
+	border-left: 2px solid #4054b2;
+    padding-left: 25px;
+    height: 125px;
+    margin:0px -21px 0px 17px;
+}
+.bodyr {
+    padding: 25px;
+}
+.dropdown-menu{
+	  background-color: #4054B2 ;
+	  border: none;
+}
+.dropdown:hover .dropdown-menu {
+    display:block;
+    margin:0px
+
+}
+.title-cov{
+        background-color: whitesmoke;
+    }
+.header-berita{
+        background-color:transparent;
+}
+.zoom-effect:hover .kotak {
+	-webkit-transform: scale(1.08);
+	transform: scale(1.08);
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+.kotak {
+	margin-bottom: 10px;
+	height: 390px;
+}

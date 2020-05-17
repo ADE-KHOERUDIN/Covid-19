@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Halaman Situs Corona - Tugas Kelompok 4 Pemograman Web">
+  <meta name="author" content="">
+
+  <title>COVID-19 - Simple Site About Corona Virus by UNJANI</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/gaya.css" rel="stylesheet">
+  <meta name="theme-color" content="#4054B2"/>
+  <meta name="msapplication-navbutton-color" content="#4054B2"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4054B2"/>
+</head>
+
+<body>
+
+   <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark  logo fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">UNJANI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+             <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beritahome.html">Berita</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toogle" href="provinsi.html" id="navbardrop" data-toggle="dropdown">Data</a>
+            <div class="dropdown-menu" id="menu">
+                <a class="nav-link" href="dunia.html">Data Dunia</a>
+                <a class="nav-link" href="provinsi.html">Data Provinsi</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="covid-info"> 
+	<div class="container">
+		<img src="img/vilus.png" class="images-vilus"\>
+		Peduli COVID-19
+	</div>
+  </div>
+  
+   <!-- Call to Action Well -->
+	<div class="row-info">
+		<div class="info card my-n3 text-center">
+			<div class="card-body">
+				<p class="text-dark m-0"></p>
+				<b class="jarak" style="font-size:25px;">HOTLINE</b> <b class="jarak" style="font-size:25px;">119</b>  <a href="tel:119" class="jarak"> <span class="panggil"> &nbsp;<img src="img/phone.png" class="corona-panggilan"\></span> </a> 
+			</div>
+		</div>
+	</div>
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="data">
+			  <div class ="positif">
+			   <div class ="keterangan">
+				<span>TOTAL POSITIF</span>
+				<div class="cor-positif angka" id="totalpositif"></div>
+				<span>ORANG</span> <span class="kasusbaru">+ <b id="newkasus">0</b> Baru</span>
+			   </div>
+			   <div class="emoji"><img src="https://kawalcorona.com/uploads/sad-u6e.png" alt="Positif" /></div>
+			  </div>
+		</div>
+    </div>
+    <div class="col-sm">
+     <div class="data">
+		  <div class = "sembuh">
+		   <div class ="keterangan">
+			<span>TOTAL SEMBUH</span>
+			<div class="cor-sembuh angka" id="totalsembuh"></div>
+			<span>ORANG</span>
+		   </div>
+		   <div class="emoji"><img src="https://kawalcorona.com/uploads/happy-ipM.png" alt="Sembuh" /></div>
+		  </div>
+	 </div>
+    </div>
+    <div class="col-sm">
+      <div class="data">
+		  <div class = "meninggal">
+		   <div class ="keterangan">
+			<span> TOTAL MENINGGAL</span>
+			<div class="cor-meninggal angka" id="totalmati"></div>
+			<span>ORANG</span> <span class="kasusbaru">+ <b id="newmati">0</b> Meninggal</span>
+		   </div>
+		   <div class="emoji">
+			<img src="https://kawalcorona.com/uploads/emoji-LWx.png" alt="Meninggal" /></div>
+		   </div>
+	  </div>
+    </div>
+  </div>
+
+		<div class="data">
+		<div class = "indonesia">
+		   <div class ="keterangan">
+				<span class="indonesia-title">DATA INDONESIA</span><br>
+				<p class="indonesia-detail" style="display:inline;">POSITIF <b class="cor-positif" id="terjangkit">0</b>, SEMBUH <b class="cor-sembuh" id="membaik">0</b>, MENINGGAL <b class="cor-meninggal" id="memburuk">0</b></p><br>
+	               		<div class="kasusterbaru">
+					<b>Update Hari ini:</b>
+						<ul style="list-style: none;margin-left: -40px;">
+							<li> <span class="kasusbaru">+ <b id="newinfeksi">0</b> Orang Terinfeksi</span></li>
+							<li> <span class="kasusbaru">+ <b id="newmeninggal">0</b> Orang Meninggal</span></li>
+						</ul>
+				</div>
+		   </div>
+		   <div class="emoji">
+				<img src="https://kawalcorona.com/uploads/indonesia-PZq.png" alt="Indonesia" /></div>
+		   </div>
+		 </div>
+		<div class="title-cov">
+		 Sumber data : Kementerian Kesehatan & JHU. Update terakhir : <span id="date"></span>
+		</div>
+		</div>		
+		<div class="clear"> </div>
+ 
+	<div class="container">
+	<div class="row">
+	<div class="konten">
+		<div class="isi">
+			<h3>Apa Itu COVID-19</h3>
+			<p>Coronavirus Disease 2019 atau COVID-19 adalah penyakit baru yang dapat menyebabkan gangguan pernapasan dan radang paru. Penyakit ini disebabkan oleh infeksi Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2). Gejala klinis yang muncul beragam, mulai dari seperti gejala flu biasa (batuk, pilek, nyeri tenggorok, nyeri otot, nyeri kepala) sampai yang berkomplikasi berat (pneumonia atau sepsis).</p>
+
+			<h3>Bagaimana COVID-19 Menular?</h3>
+			<p>COVID-19 adalah penyakit baru dan para peneliti masih mempelajari bagaimana cara penularannya. Dari berbagai penelitian, metode penyebaran utama penyakit ini diduga adalah melalui droplet saluran pernapasan dan kontak dekat dengan penderita. Droplet merupakan partikel kecil dari mulut penderita yang dapat mengandung virus penyakit, yang dihasilkan pada saat batuk, bersin, atau berbicara. Droplet dapat melewati sampai jarak tertentu (biasanya 1 meter).
+
+			Droplet bisa menempel di pakaian atau benda di sekitar penderita pada saat batuk atau bersin. Namun, partikel droplet cukup besar sehingga tidak akan bertahan atau mengendap di udara dalam waktu yang lama. Namun, masyarakat diwajibkan untuk menggunakan masker kain yang menutupi hidung dan mulut untuk mencegah penyebaran droplet.</p>
+		</div>
+	  </div>
+	  <div class="konten">
+	  <div class="card card-custom">
+                    <div class="card-body">
+                        <div class="row" style="padding-top:10px;padding-bottom:10px;">
+                            <div class="col-md-12 text-center">
+                                <h3>Gejala COVID-19</h3>
+                            </div>
+                        </div>
+			                  <br>
+                        <div class="row justify-content-center" style="padding-bottom:20px;">
+                            <div class="col-md-4 text-center">
+                                <img class="img-resposive" src="https://corona.jakarta.go.id/img/logo/batuk-dan-nyeri.png" alt="">
+                                <br>
+                                <p>Batuk dan Nyeri Tenggorok</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img class="img-resposive" src="https://corona.jakarta.go.id/img/logo/demam.png" alt="">
+                                <br>
+                                <p>Demam suhu tinggi / Ada riwayat demam</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img class="img-resposive" src="https://corona.jakarta.go.id/img/logo/sesak-napas.png" alt="">
+                                <br>
+                                <p>Sesak napas</p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <p style="padding:8px;text-align:center;">Gejala COVID-19 mulai dari seperti gejala flu biasa sampai kondisi berat seperti pneumonia (radang paru akut yang gejalanya sesak napas). Jika Anda mengalami gejala, memiliki riwayat perjalanan ke wilayah terjangkit, atau berpaparan dengan orang positif/kemungkinan COVID-19, maka Anda diimbau untuk melakukan isolasi diri dan menghubungi Tanggap COVID-19 di nomor 112 atau pesan Whatsapp melalui 081 112 112 112 atau 081 388 376 955.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      	 </div>
+	 </div>
+			<div class="card card-kostum">
+                <div class="text-center">
+                    <h1 id="head-card-desktop" style="padding: 70px 0  30px 0;">
+                        <span class="py-3 heading-responsive">
+                        Lakukan Hal Berikut Ini Jika Anda<br>Mengalami Gejala Mirip COVID-19 
+						            </span>
+                    </h1>
+                    <h1 id="head-card-mobile" style="padding: 30px 0px 20px 0px;font-size:25px;">
+                        <span class="py-3 heading-responsive">
+                        Lakukan Hal Berikut Ini Jika Anda Mengalami Gejala Mirip COVID-19
+						            </span>
+                    </h1>
+                </div
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <table style="font-size: 1.2rem;">
+                            <tbody><tr style="height: 30px;">
+                                <td style="width: 3rem; vertical-align: top;" class=""><img src="https://corona.jakarta.go.id/img/logo/checklist.png" alt=""></td>
+                                <td style="vertical-align: top;" class="text-white">Hubungi nomor layanan COVID-19 di 112, 081 112 112 112 dan 081 388 376 955</td>
+                            </tr>
+                            <tr style="height: 30px;">
+                            </tr>
+                            <tr style="height: 30px;">
+                                <td style="width: 5rem; vertical-align: top;"><img src="https://corona.jakarta.go.id/img/logo/checklist.png" alt=""></td>
+                                <td style="vertical-align: top;" class="text-white">Kenakan masker (tipe masker bedah), dan ganti secara berkala, agar tidak menular ke orang lain</td>
+                            </tr>
+                            <tr style="height: 30px;">
+                            </tr>
+                            <tr style="height: 30px;">
+                                <td style="width: 5rem; vertical-align: top;"><img src="https://corona.jakarta.go.id/img/logo/checklist.png" alt=""></td>
+                                <td style="vertical-align: top;" class="text-white">Lakukan isolasi mandiri, batasi menerima tamu di rumah, hindari kontak langsung dengan orang di sekitar Anda</td>
+                            </tr>
+                            <tr style="height: 30px;">
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div class="col-md-5">
+                        <table style="font-size: 1.2rem;">
+                            <tbody><tr style="height: 30px;">
+                                <td style="width: 5rem; vertical-align: top;"><img src="https://corona.jakarta.go.id/img/logo/checklist.png" alt=""></td>
+                                <td style="" class="text-white">Tetap tinggal di rumah jaga jarak dengan orang lain termasuk anggota keluarga</td>
+                            </tr>
+                            <tr style="height: 30px;">
+                            </tr>
+                            <tr style="height: 30px;">
+                                <td style="width: 5rem; vertical-align: top;"><img src="https://corona.jakarta.go.id/img/logo/checklist.png" alt=""></td>
+                                <td style="vertical-align: top;" class="text-white">Minta bantuan teman, anggota keluarga, atau layanan jasa lain untuk menyelesaikan urusan di luar rumah</td>
+                            </tr>
+                            <tr style="height: 30px;">
+                            </tr>
+                            <tr style="height: 30px;">
+                                <td style="width: 5rem; vertical-align: top;"><img src="https://corona.jakarta.go.id/img/logo/checklist.png" alt=""></td>
+                                <td style="vertical-align: top;" class="text-white">Lakukan ini semua selama 14 hari dan pantau gejala yang Anda alami setiap hari</td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+	</div>
+            </div>
+	</div>
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Unjani 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	var d = new Date();
+	var month = new Array();
+	  month[0] = "Januari";
+	  month[1] = "Februari";
+	  month[2] = "Maret";
+	  month[3] = "April";
+	  month[4] = "Mei";
+	  month[5] = "Juni";
+	  month[6] = "Juli";
+	  month[7] = "Agustus";
+	  month[8] = "September";
+	  month[9] = "Oktober";
+	  month[10] = "November";
+	  month[11] = "Desember";
+	  
+	$("#date").html(d.getDate() + " " + month[d.getMonth()] + " " + d.getFullYear());
+		var dataIndo = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://corona.lmao.ninja/v2/countries/indonesia",
+                "method": "GET",
+            }
+            $.ajax(dataIndo).done(function (response) {
+                $('#terjangkit').html(response.cases);
+                $('#membaik').html(response.recovered);
+                $('#memburuk').html(response.deaths);
+		$('#newmeninggal').html(response.todayDeaths);
+		$('#newinfeksi').html(response.todayCases);
+            });
+		var dataPosit = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://corona.lmao.ninja/v2/all",
+                "method": "GET",
+            }
+            $.ajax(dataPosit).done(function (response) {
+                $('#totalpositif').html(response.cases);
+		$('#totalmati').html(response.deaths);
+		$('#totalsembuh').html(response.recovered);
+		$('#newkasus').html(response.todayCases);
+		$('#newmati').html(response.todayDeaths);
+            });
+
+	});
+	</script>
+</body>
+</html>
