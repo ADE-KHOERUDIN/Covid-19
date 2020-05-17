@@ -6,7 +6,9 @@ Dengan mengambil referensi dari situs:
 - https://covid19.cimahikota.go.id
 - https://corona.jakarta.go.id
 
-link: https://corona.sirajin.com
+
+Demo: https://corona.sirajin.com
+
 
 Tools Pendukung:
 - Notepad++ / Sublime text
